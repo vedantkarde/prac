@@ -27,10 +27,4 @@ public class RegisterServlet extends HttpServlet {
         boolean status = UserDAO.saveUser(name, email, password, gender,
                                           department, skills, dob);
 
-        if (status) {
-            response.sendRedirect("success.jsp");
-        } else {
-            response.sendRedirect("error.jsp");
-        }
-    }
-}
+  
